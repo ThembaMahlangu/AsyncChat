@@ -16,7 +16,7 @@ function ChatInput({ chatId }: Props) {
     const [prompt, setPrompt] = useState("");
     const { data: session } = useSession();
 
-    const model = "gpt-3.5-turbo"
+    const model = "text-davinci-003"
     const sendMessage = async (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault()
         if(!prompt) return;
