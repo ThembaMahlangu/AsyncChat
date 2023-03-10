@@ -27,11 +27,11 @@ export default async function handler(
     const response = await query(prompt, chatId, model,)
 
     const message: Message = {
-        text: response || "EduChat cannot find the answer for that",
+        text: response || "AsyncChat cannot find the answer for that",
         createdAt: admin.firestore.Timestamp.now(),
         user: {
-            _id: "EduChat",
-            name: "EduChat",
+            _id: "AsyncChat",
+            name: "AsyncChat",
             avatar: "https://pbs.twimg.com/media/FofI7xdXoAAMVh0?format=png&name=small",
         },
     };

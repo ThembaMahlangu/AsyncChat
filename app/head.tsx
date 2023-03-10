@@ -1,7 +1,7 @@
 export default function Head() {
   return (
     <>
-      <title>EduChat Advanced</title>
+      <title>Async-Chat Advanced</title>
       <meta content="width=device-width, initial-scale=1" name="viewport" />
       <link rel="icon" href="/favicon.ico" />
     </>

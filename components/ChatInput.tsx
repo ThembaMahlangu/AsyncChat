@@ -37,7 +37,7 @@ function ChatInput({ chatId }: Props) {
         await addDoc(collection(db, "users", session?.user?.email!, "chats", chatId, "messages"),
         message);
 
-        const notification = toast.loading("EduChat is thinking...")
+        const notification = toast.loading("AsyncChat is thinking...")
 
         await fetch("/api/askQuestion", {
             method: "POST",
@@ -48,7 +48,7 @@ function ChatInput({ chatId }: Props) {
                 prompt: input, chatId, model, session
             })
         }).then(() => {
-            toast.success("EduChat has responded", {
+            toast.success("AsyncChat has responded", {
                 id: notification,
             })
         })

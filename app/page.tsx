@@ -3,7 +3,7 @@ import { BoltIcon, ExclamationTriangleIcon, SunIcon } from '@heroicons/react/24/
 function Homepage() {
   return (
     <div className="flex flex-col items-center justify-center h-screen px-2 text-white">
-        <h1 className="text-5xl font-bold mb-20">EduChat</h1>
+        <h1 className="text-5xl font-bold mb-20">Async-Chat</h1>
         <div className="flex space-x-2 text-center">
             <div>
                 <div className="flex flex-col items-center justify-center mb-5">
@@ -26,7 +26,7 @@ function Homepage() {
                     <div className="space-y-2">
                         <p className="infoText">Ability to switch between ChatGPT Models</p>
                         <p className="infoText">Messages are stored, you can continue later</p>
-                        <p className="infoText">Hot Toast notifications when EduChat is thinking!</p>
+                        <p className="infoText">Hot Toast notifications when AsyncChat is thinking!</p>
                     </div>
                 </div>
             </div>
